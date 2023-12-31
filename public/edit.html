@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <title>Recipe App</title>
+        <link href="styles/styles.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Recipe App</h1>
+            </div> 
+        </div>
+
+        <div class="actions">
+            <div class="actions__container actions__container--spaced">
+                <a href='/index.html'>Home</a>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <input id="recipe-title" class="title-input" placeholder="Recipe Title">
+            <textarea id="recipe-steps" class="steps-input" placeholder="Enter recipe steps"></textarea>
+            
+
+            <div class="recipe-ingredients">
+                <h2 style="font-weight: 500;">Ingredients</h2>
+                <div id="ingredients" class="ingredients"></div>
+
+                <div class="bottom-ingredient">
+                    <form id="add-ingredient">
+                        <input type="text" class="input" placeholder="Add Ingredient" name="addIngredient">
+                        <button class="button">Add</button>
+                    </form>
+
+                    <select id="select-category-dropdown" class="dropdown--edit">
+                        <option value="">Select a food category</option>
+                        <option value="american">American</option>
+                        <option value="asian">Asian</option>    
+                        <option value="indian">Indian</option>
+                        <option value="italian">Italian</option>
+                        <option value="mexican">Mexican</option>  
+                        <option value="desserts">Desserts</option>
+                        <option value="drinks">Drinks</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            
+
+
+            <div class="bottom-info">
+                <button id="delete-recipe" class="button button--secondary">Delete Recipe</button>
+            </div>  
+        </div>
+        
+        <script src="/scripts/edit-bundle.js"></script>
+    </body>
+</html>

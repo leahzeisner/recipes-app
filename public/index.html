@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <title>Recipe App</title>
+        <link href="./styles/styles.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+    </head> 
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Recipe App</h1>
+            </div> 
+        </header>
+
+
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" class="input" type="text" placeholder="Search"> 
+                <select id="sort-dropdown" class="dropdown">
+                    <option selected disabled>Sort by food category</option>
+                    <option value="all">All</option>
+                    <option value="american">American</option>
+                    <option value="asian">Asian</option>    
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>  
+                    <option value="desserts">Desserts</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="recipes"></div>
+            <button id="create-recipe" class="button">Add Recipe</button>
+        </div>
+        
+        <script src="/scripts/index-bundle.js"></script>
+    </body>
+</html>

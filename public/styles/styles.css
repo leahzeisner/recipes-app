@@ -1,0 +1,258 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+
+/* Container */
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+
+
+/* Header */
+
+.header {
+    background: rgba(255, 166, 0, 0.719);
+    color: darkgreen;
+    padding: 2.8rem 0;
+}
+  
+.header__title {
+    font-size: 3.6rem;
+    margin-bottom: .4rem;
+    padding-left: 17rem;
+}
+  
+
+
+/* Actions Bar */
+
+.actions {
+    background-color: rgba(0, 128, 0, 0.685);
+    border-bottom: 1px solid #dedfe0;
+    padding: .8rem
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+    justify-content: space-between;
+}
+
+.dropdown {
+    border: 1px solid #DEDFE0;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+    text-align: start;
+    margin-left: 22.3rem;
+}
+
+.dropdown--edit{
+    border: 1px solid #DEDFE0;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    padding: .4rem .8rem;
+    text-align: start;
+}
+
+
+
+/* Form Inputs */
+
+.input {
+    border: 1px solid #DEDFE0;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+    text-align: start;
+}
+
+.button {
+    background: darkgreen;
+    border: none;
+    border-bottom: 2px solid #396684;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease;
+}
+
+.button:hover {
+    background:  rgba(255, 166, 0, 0.719);
+}
+
+.button--secondary {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+    background: #6E6E6E;
+}
+
+.checkbox {
+    display: flex;
+    align-items: baseline;
+}
+
+.checkbox > input {
+    margin-right: .4rem;
+}
+
+
+
+/* Recipe editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-size: 2.2rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+.steps-input {
+    border: 1px solid #DEDFE0;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+}
+
+.bottom-info {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.bottom-ingredient {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Recipe List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #eeeeee;
+}
+
+.list-item__title, .list-item__category {
+    display: inline-flex;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+    font-weight: bold;
+}
+
+.list-item__category {
+    font-size: 1.8rem;
+    margin-bottom: .4rem;
+    font-style: italic;
+    font-weight: 400;
+    color: darkgreen;
+    float: right;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
+
+
+/* Ingredient List Item */
+
+.list-item--ingredient {
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.6rem 0;
+    padding: 1rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    transition: background .3s ease;
+    align-items: center;
+}
+
+.list-item--ingredient:hover {
+    background: #eeeeee;
+}
+
+.list-item__container {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 300;
+    align-items: baseline;
+}
+
+.list-item--ingredient-checkbox {
+    margin-right: 1rem;
+}
